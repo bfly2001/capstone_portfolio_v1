@@ -57,45 +57,24 @@
         <!--/About-->
 
         <!-- projects -->
-        <div id='registration-form' class="card mb-3">
-          <div class="card-header text-white bg-secondary">Projects</div>
-          <div class="card-body">
-            <h5 class="card-title">Online Registration Form</h5>
-            <p class="card-text">Mobile first designed form that is responsive using HTML, CSS, and media queries.</p>
-            <a href="https://bfly2001.github.io/Online-Registration-Form/" class="btn btn-secondary">View</a>
-          </div>
+        <div id='registration-form' class="card mb-3" onclick='myFunction()'>
+          <div class="card-header text-white bg-secondary">Online Registration Form</div>
           <img class="card-img-top" src="img/registration-form-pic.png" alt="Card image cap">
         </div>
-        <div id='photo-gallery' class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Photo Gallery</h5>
-            <p class="card-text">An interactive photo gallery using HTML, CSS, Javascript and jQuery.</p>
-            <a href="https://bfly2001.github.io/Interactive_Photo_Gallery/" class="btn btn-secondary">View</a>
-          </div>
+        <div id='photo-gallery' class="card mb-3" onclick='myGallery()'>
+          <div class="card-header text-white bg-secondary">Interactive Photo Gallery</div>
           <img class="card-img-top" src="img/photo-gallery-pic.png" alt="Card image cap">
         </div>
-        <div id='game-show' class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Game Show App</h5>
-            <p class="card-text">A Game Show app made with HTML, CSS, and Javascript utilizing JS arrays and functions.</p>
-            <a href="https://bfly2001.github.io/game_show_app/" class="btn btn-secondary">View</a>
-          </div>
+        <div id='game-show' class="card mb-3" onclick='myGame()'>
+          <div class="card-header text-white bg-secondary">Game Show App</div>
           <img class="card-img-top" src="img/game-show-pic.png" alt="Card image cap">
         </div>
-        <div id='dashboard' class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Web App Dashboard</h5>
-            <p class="card-text">A single page Dashboard made using HTML, CSS, Javascript, and multiple charts using chart.js.</p>
-            <a href="https://bfly2001.github.io/web_app_dashboard_v3.1/" class="btn btn-secondary">View</a>
-          </div>
+        <div id='dashboard' class="card mb-3" onclick='myDashboard()'>
+          <div class="card-header text-white bg-secondary">Web App Dashboard</div>
           <img class="card-img-top" src="img/dash-board-pic.png" alt="Card image cap">
         </div>
-        <div id='directory' class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">Employee Directory</h5>
-            <p class="card-text">Used fetch to obtain JSON data from an API to create an employee directory.</p>
-            <a href="https://bfly2001.github.io/employee_directory_v1/" class="btn btn-secondary">View</a>
-          </div>
+        <div id='directory' class="card mb-3" onclick='myDirectory()'>
+          <div class="card-header text-white bg-secondary">Employee Directory</div>
           <img class="card-img-top" src="img/employee-directory-pic.png" alt="Card image cap">
         </div>
         <!-- /projects -->
@@ -178,8 +157,118 @@
 
   </div><!--/.container-->
 
+  <!-- Registration Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="0" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Online Registration Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <img class="card-img-top" src="img/registration-form-pic.png" alt="Card image cap">
+      <div class="modal-body">
+        <p class="card-text">Mobile first designed form that is responsive using HTML, CSS, and media queries.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="https://bfly2001.github.io/Online-Registration-Form/" class="btn btn-secondary">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Photo Gallery Modal -->
+<div class="modal fade" id="galleryModal" tabindex="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Interactive Photo Gallery</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <img class="card-img-top" src="img/photo-gallery-pic.png" alt="Card image cap">
+    <div class="modal-body">
+      <p class="card-text">An interactive photo gallery using HTML, CSS, Javascript and jQuery.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <a href="https://bfly2001.github.io/Interactive_Photo_Gallery/" class="btn btn-secondary">View</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Game Show App Modal -->
+<div class="modal fade" id="gameModal" tabindex="2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Game Show App</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <img class="card-img-top" src="img/game-show-pic.png" alt="Card image cap">
+    <div class="modal-body">
+      <p class="card-text">A Game Show app made with HTML, CSS, and Javascript utilizing JS arrays and functions.</p>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <a href="https://bfly2001.github.io/game_show_app/" class="btn btn-secondary">View</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Web App Dashboard Modal -->
+<div class="modal fade" id="dashboardModal" tabindex="3" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Web App Dashboard</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <img class="card-img-top" src="img/dash-board-pic.png" alt="Card image cap">
+    <div class="modal-body">
+      <p class="card-text">A single page Dashboard made using HTML, CSS, Javascript, and multiple charts using chart.js.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <a href="https://bfly2001.github.io/web_app_dashboard_v3.1/" class="btn btn-secondary">View</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Employee Directory Modal -->
+<div class="modal fade" id="directoryModal" tabindex="4" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Employee Directory</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <img class="card-img-top" src="img/employee-directory-pic.png" alt="Card image cap">
+    <div class="modal-body">
+      <p class="card-text">Used fetch to obtain JSON data from an API to create an employee directory.</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <a href="https://bfly2001.github.io/employee_directory_v1/" class="btn btn-secondary">View</a>
+    </div>
+  </div>
+</div>
+</div>
+
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JS, then jQuery, then Popper.js, then Bootstrap JS -->
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

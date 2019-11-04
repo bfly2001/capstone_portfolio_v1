@@ -1,0 +1,29 @@
+<div class="card-body">
+  <h5 class="card-title">Online Registration Form</h5>
+  <p class="card-text">Mobile first designed form that is responsive using HTML, CSS, and media queries.</p>
+  <a href="https://bfly2001.github.io/Online-Registration-Form/" class="btn btn-secondary">View</a>
+</div>
+
+<div class="card-body">
+  <h5 class="card-title">Photo Gallery</h5>
+  <p class="card-text">An interactive photo gallery using HTML, CSS, Javascript and jQuery.</p>
+  <a href="https://bfly2001.github.io/Interactive_Photo_Gallery/" class="btn btn-secondary">View</a>
+</div>
+
+<div class="card-body">
+  <h5 class="card-title">Game Show App</h5>
+  <p class="card-text">A Game Show app made with HTML, CSS, and Javascript utilizing JS arrays and functions.</p>
+  <a href="https://bfly2001.github.io/game_show_app/" class="btn btn-secondary">View</a>
+</div>
+
+<div class="card-body">
+  <h5 class="card-title">Web App Dashboard</h5>
+  <p class="card-text">A single page Dashboard made using HTML, CSS, Javascript, and multiple charts using chart.js.</p>
+  <a href="https://bfly2001.github.io/web_app_dashboard_v3.1/" class="btn btn-secondary">View</a>
+</div>
+
+<div class="card-body">
+  <h5 class="card-title">Employee Directory</h5>
+  <p class="card-text">Used fetch to obtain JSON data from an API to create an employee directory.</p>
+  <a href="https://bfly2001.github.io/employee_directory_v1/" class="btn btn-secondary">View</a>
+</div>
