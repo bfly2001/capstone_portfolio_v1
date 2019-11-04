@@ -1,6 +1,6 @@
-
+//display project modal functions
 function myFunction() {
-  $('#exampleModalCenter').modal('toggle');
+  $('#regModal').modal('toggle');
 }
 
 function myGallery() {
@@ -12,7 +12,7 @@ function myGame() {
 }
 
 function myDashboard() {
-  $('#dashboardModal').modal('toggle');
+  $('#dashModal').modal('toggle');
 }
 
 function myDirectory() {
