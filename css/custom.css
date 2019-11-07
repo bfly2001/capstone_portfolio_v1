@@ -22,3 +22,9 @@ svg:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+#svg-icons {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-items: center;
+}
