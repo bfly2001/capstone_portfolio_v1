@@ -91,5 +91,9 @@ svg:hover {
       text-align: center;
     }
 
+    .bg-secondary:hover {
+      opacity: .5;
+    }
+
 
 }
