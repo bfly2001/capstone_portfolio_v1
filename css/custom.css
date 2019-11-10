@@ -1,4 +1,21 @@
 
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #868e96;
+}
+
 svg {
   transition: all .2s ease-in-out;
   width: 30%;
@@ -49,4 +66,30 @@ svg:hover {
     .navbar-brand {
       font-size: xx-large;
     }
+}
+
+@media only screen
+  and (min-device-width: 1024px) {
+    .project-header {
+      display: none;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+      background-color: #868e96;
+    }
+
+    .text {
+      color: white;
+      font-size: xx-large;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+
 }
