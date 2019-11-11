@@ -3,6 +3,10 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.bg-dark {
+    color: #196786;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -62,9 +66,18 @@ svg:hover {
 /* Media Queries */
 
 @media only screen
-  and (min-device-width: 768px) and (max-device-width: 1024px) {
+  and (min-device-width: 768px) {
     .navbar-brand {
       font-size: xx-large;
+    }
+
+    #container-fluid {
+      display: grid;
+      grid-template-columns: 45% 45%;
+      grid-gap: 1%;
+      justify-content: space-evenly;
+      margin-bottom: 3%;
+      margin-top: 3%;
     }
 }
 
@@ -95,5 +108,8 @@ svg:hover {
       opacity: .5;
     }
 
+    #about-text {
+      font-size: large;
+    }
 
 }
