@@ -102,8 +102,8 @@
                 <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
                 </a>
               </svg>
-              <svg style='width: 30%;' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              	 viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+              <svg style='enable-background:new 0 0 400 400; width: 30%;' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 viewBox="0 0 400 400" xml:space="preserve">
                  <a href='https://twitter.com/BrendanSFlynn'>
               <style type="text/css">
               	.st0{fill: black;}
@@ -141,40 +141,36 @@
  <!-- footer -->
   <div class="row footer">
   <div class="col-md-7">
-    <ul class="nav">
-  <li class="nav-item">
-    <a class="btn btn-outline-light" href="#about">About</a>
-  </li>
     <!-- footer dropup -->
-<div class="btn-group dropup">
-  <button type="button" class="btn btn-outline-light">Projects</button>
-  <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="sr-only">Toggle Dropdown</span>
-  </button>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#registration-form">Online Registration Form</a>
-    <a class="dropdown-item" href="#photo-gallery">Interactive Photo Gallery</a>
-    <a class="dropdown-item" href="#game-show">Game Show App</a>
-    <a class="dropdown-item" href="#dashboard">Web App Dashboard</a>
-    <a class="dropdown-item" href="#directory">Employee Directory</a>
+      <div class="btn-group dropup" data-offset='100'>
+        <button type="button" class="btn btn-outline-light">Projects</button>
+        <button type="button" class="btn btn-outline-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <div class="dropdown-menu">
+          <a class='dropdown-item' href='#about'>About</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#registration-form">Online Registration Form</a>
+          <a class="dropdown-item" href="#photo-gallery">Interactive Photo Gallery</a>
+          <a class="dropdown-item" href="#game-show">Game Show App</a>
+          <a class="dropdown-item" href="#dashboard">Web App Dashboard</a>
+          <a class="dropdown-item" href="#directory">Employee Directory</a>
+        </div>
+      </div>
   </div>
-</div>
-  </li>
-</ul>
-   </div>
-  <div class="col-md text-md-right text-white">
-    <small>&copy; Brendan Flynn</small>
-  </div>
+        <div class="col-md text-md-right text-white">
+          <small>&copy; Brendan Flynn</small>
+        </div>
  <!-- /footer -->
 
   </div><!--/.container-->
 
 <!-- Web App Dashboard Modal -->
-<div class="modal fade" id="dashModal" data-index="3" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="dashModal" data-index="3" role="dialog" aria-labelledby="dash-header" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Web App Dashboard</h5>
+      <div class="modal-header" id="dash-header">
+        <h5 class="modal-title">Web App Dashboard</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -184,10 +180,10 @@
         <p class="card-text">A single page Dashboard made using HTML, CSS, Javascript, and multiple charts using chart.js.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#gameModal"  class="btn btn-secondary"><</button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#gameModal"  class="btn btn-secondary">&lt;</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <a href="https://bfly2001.github.io/web_app_dashboard_v3.1/" class="btn btn-secondary">View</a>
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#directoryModal"  class="btn btn-secondary">></button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#directoryModal"  class="btn btn-secondary">&gt;</button>
       </div>
     </div>
   </div>
@@ -195,11 +191,11 @@
 
 
   <!-- Employee Directory Modal -->
-<div class="modal fade" id="directoryModal" data-index="4" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="directoryModal" data-index="4" role="dialog" aria-labelledby="directory-header" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Employee Directory</h5>
+      <div class="modal-header" id='directory-header'>
+        <h5 class="modal-title">Employee Directory</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -209,10 +205,10 @@
         <p class="card-text">Used fetch to obtain JSON data from an API to create an employee directory.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#dashModal"  class="btn btn-secondary"><</button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#dashModal"  class="btn btn-secondary">&lt;</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <a href="https://bfly2001.github.io/employee_directory_v1/" class="btn btn-secondary">View</a>
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#regModal"  class="btn btn-secondary">></button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#regModal"  class="btn btn-secondary">&gt;</button>
       </div>
     </div>
   </div>
@@ -220,11 +216,11 @@
 
 
   <!-- Registration Modal -->
-<div class="modal fade" id="regModal" data-index="0" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="regModal" data-index="0" role="dialog" aria-labelledby="reg-header" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Online Registration Form</h5>
+      <div class="modal-header" id='reg-header'>
+        <h5 class="modal-title">Online Registration Form</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -234,21 +230,21 @@
         <p class="card-text">Mobile first designed form that is responsive using HTML, CSS, and media queries.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#directoryModal" class="btn btn-secondary"><</button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#directoryModal" class="btn btn-secondary">&lt;</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <a href="https://bfly2001.github.io/Online-Registration-Form/" class="btn btn-secondary">View</a>
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#galleryModal" class="btn btn-secondary">></button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#galleryModal" class="btn btn-secondary">&gt;</button>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Photo Gallery Modal -->
-<div class="modal fade" id="galleryModal" data-index="1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="galleryModal" data-index="1" role="dialog" aria-labelledby="gallery-header" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered" role="document">
   <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalCenterTitle">Interactive Photo Gallery</h5>
+    <div class="modal-header" id='gallery-header'>
+      <h5 class="modal-title">Interactive Photo Gallery</h5>
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -258,21 +254,21 @@
       <p class="card-text">An interactive photo gallery using HTML, CSS, Javascript, jQuery, and search/filter functionality.</p>
     </div>
     <div class="modal-footer">
-      <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#regModal" class="btn btn-secondary"><</button>
+      <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#regModal" class="btn btn-secondary">&lt;</button>
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       <a href="https://bfly2001.github.io/Interactive_Photo_Gallery/" class="btn btn-secondary">View</a>
-      <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#gameModal"  class="btn btn-secondary">></button>
+      <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#gameModal"  class="btn btn-secondary">&gt;</button>
     </div>
   </div>
 </div>
 </div>
 
 <!-- Game Show App Modal -->
-<div class="modal fade" id="gameModal" data-index="2" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="gameModal" data-index="2" role="dialog" aria-labelledby="game-header" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">Game Show App</h5>
+      <div class="modal-header" id='game-header'>
+        <h5 class="modal-title">Game Show App</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
         </button>
@@ -281,10 +277,11 @@
       <div class="modal-body">
         <p class="card-text">A Game Show app made with HTML, CSS, and Javascript utilizing JS arrays and functions.</p>
       <div class="modal-footer">
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#galleryModal"  class="btn btn-secondary"><</button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#galleryModal"  class="btn btn-secondary">&lt;</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <a href="https://bfly2001.github.io/game_show_app/" class="btn btn-secondary">View</a>
-        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#dashModal"  class="btn btn-secondary">></button>
+        <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#dashModal"  class="btn btn-secondary">&gt;</button>
+      </div>
       </div>
     </div>
   </div>
