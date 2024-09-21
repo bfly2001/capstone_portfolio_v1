@@ -19,6 +19,10 @@ function myDirectory() {
   $('#directoryModal').modal('toggle');
 }
 
+function myAuthor() {
+  $('#authorModal').modal('toggle');
+}
+
 
 //collapse about section
 function collapseHeader() {
